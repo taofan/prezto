@@ -4,12 +4,20 @@
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
-
+alias dircolors="gdircolors"
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
 # Customize to your needs...
-unsetopt CORRECT
+# Set theme in Prezto
+#autoload -Uz promptinit
+#promptinit
+#prompt tao
+
+## Don't correct worng command in Prezto
+#unsetopt CORRECT
+
+# My own stuff
 source /Users/$USER/.tao
