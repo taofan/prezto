@@ -20,4 +20,6 @@ fi
 #unsetopt CORRECT
 
 # My own stuff
-source /Users/$USER/.tao
+source "$HOME/.tao"
+
+test -e "${HOME}/.iterm2/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2/.iterm2_shell_integration.zsh"
